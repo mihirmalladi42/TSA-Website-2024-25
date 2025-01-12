@@ -1,0 +1,14 @@
+#listDisplay {
+  font-family: "Open Sans";
+  margin-left: 50px;
+}
+#listDisplay li {
+  margin-bottom: 10px;
+}
+#listDisplay li button {
+  margin-left: 1%;
+  font-family: verdana;
+}
+.labelContact {
+  font-family: "Open Sans";
+}

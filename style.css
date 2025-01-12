@@ -1,0 +1,41 @@
+h1 {
+    text-align: center;
+  }
+  .main-container {
+  font-family: oswald;
+  }
+  .home-cards-1 {
+    display: flex;
+    padding: 30px;
+  }
+  .mission-statement {
+    text-align: center;
+    font-family: Open Sans;
+    font-style: italic;
+  }
+  .h1title {
+    text-align: center;
+    font-size: 60px;
+  }
+  .card {
+  display: flex;
+  }
+  .left-img {
+    float: left;
+  }
+  .card-title {
+  color: #f34f4c;
+    font-size: 40px;
+  }
+  .card-text {
+    font-family: century-gothic;
+    font-size: 20px;
+  }
+  .gsimg {
+    float: left;
+    padding-right: 25px;
+  }
+  .right-img {
+    float: left;
+    padding-right: 25px;
+  }

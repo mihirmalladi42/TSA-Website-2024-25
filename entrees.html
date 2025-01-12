@@ -1,0 +1,198 @@
+<html>
+    <head>
+        <link
+          href="https://fonts.googleapis.com/css?family=Oswald"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css?family=Open Sans"
+          rel="stylesheet"
+        />
+        <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet'>
+        <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css" />
+        <link rel="stylesheet" href="entrees.css">
+        <link rel="stylesheet" href="headerAccess.css" />
+      </head>
+
+
+
+      <body>
+        <div class="costHeader pointer" id="header"><label class="pointer">Total: $</label><label id="costLabel" class="pointer"></label></div>
+    <div class="dropdown" id="dropDiv">
+      <ul id="dropList"> </ul>
+    </div>
+        <img src="appmenumain.png" width="100%"><br>
+        <nav class="navtest">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="appetizers.html">Appetizers</a></li>
+            <li><a href="entrees.html">Entrees</a></li>
+            <li><a href="desserts.html">Desserts</a></li>
+            <li><a href="drinks.html">Drinks</a></li>
+            <li><a href="billinginfo.html">Billing Info</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="referencepage.html">Reference Page</a></li>
+            <li><a href="index.html">FAQ</a></li>
+          </ul>
+        </nav>
+        <h1 class="app">ENTREES</h1>
+        <hr>
+        <div style="display: flex; align-items: center;" onclick="openKoshary()">
+        <img src="koshary.png" class="image-dims">
+        <div>
+          <h1 style="font-family: oswald; font-size: 65px;">KOSHARY</h1>
+          <p style="font-family: bitter; font-size: 20px;">A hearty dish made with rice, lentils, macaroni, chickpeas, and topped with fried onions and a spicy tomato sauce 
+          </p><br>
+          <p style="font-family: Open Sans; font-size: 20px; font-style: italic;">$20.99
+          </p><br><br>
+          <p style="font-family: Open Sans; font-size: 15px;">Contains: gluten, legumes
+          </p>
+        </div>
+        </div>
+        <div class="kosharyDiv" id="kosharyDisplay">
+        <label id="kosharyConfirm" style="font-family: oswald; margin: 20px; padding-left: 30px;">Confirm Purchase of Koshary for $20.99? (You can cancel at checkout screen)</label>
+        <button id="kosharyYes" onclick="koshary()">Yes</button>
+        <button id="kosharyNo" onclick="closeKoshary()">No</button>
+        </div>
+        <hr>
+    
+        <div style="display: flex; align-items: center;" onclick="openRatatouille()">
+          <img src="ratatouille.png" class="image-dims">
+          <div>
+            <h1 style="font-family: oswald; font-size: 65px;">RATATOUILLE</h1>
+            <p style="font-family: bitter; font-size: 20px;">A comfy, flavor-filled, vegetable stew made with eggplant, zucchini, bell peppers, and tomatoes, seasoned with herbs and simmered to blend the flavors
+            </p><br>
+            <p style="font-family: Open Sans; font-size: 20px; font-style: italic;">$16.99</p><br><br>
+            <p style="font-family: Open Sans; font-size: 15px;">Contains: garlic, herbs</p>
+          </div>
+          </div>
+          <div class="ratatouilleDiv" id="ratatouilleDisplay">
+            <label id="ratatouilleConfirm" style="font-family: oswald; margin: 20px; padding-left: 30px;">Confirm Purchase of Ratatouille for $16.99? (You can cancel at checkout screen)</label>
+            <button id="ratatouilleYes" onclick="ratatouille()">Yes</button>
+            <button id="ratatouilleNo" onclick="closeRatatouille()">No</button>
+            </div>
+    
+          <hr>
+    
+          <div style="display: flex; align-items: center;" onclick="openJapchae()">
+            <img src="japchae.png" class="image-dims">
+            <div>
+              <h1 style="font-family: oswald; font-size: 65px;">JAPCHAE</h1>
+              <p style="font-family: bitter; font-size: 20px;">Stir-fried sweet potato noodles with vegetables like spinach, carrots, and mushrooms, seasoned with soy sauce and sesame oil
+              </p><br>
+              <p style="font-family: Open Sans; font-size: 20px; font-style: italic;">$15.99</p><br><br>
+              <p style="font-family: Open Sans; font-size: 15px;">Contains: garlic, herbs</p>
+            </div>
+            </div>
+            <div class="japchaeDiv" id="japchaeDisplay">
+              <label id="japchaeConfirm" style="font-family: oswald; margin: 20px; padding-left: 30px;">Confirm Purchase of Japchae for $15.99? (You can cancel at checkout screen)</label>
+              <button id="japchaeYes" onclick="japchae()">Yes</button>
+              <button id="japchaeYes" onclick="closeJapchae()">No</button>
+              </div>
+            <hr>
+    
+            <div style="display: flex; align-items: center;" onclick="openChole()">
+              <img src="chole.png" class="image-dims">
+              <div>
+                <h1 style="font-family: oswald; font-size: 65px;">CHOLE BHATURE</h1>
+                <p style="font-family: bitter; font-size: 20px;">A hearty chickpea curry cooked in a spicy, tangy tomato and onion gravy, flavored with a blend of traditional Indian spices, served with golden, fluffy, deep-fried bread made from a fermented dough
+                </p><br>
+                <p style="font-family: Open Sans; font-size: 20px; font-style: italic;">$20.99, Chef's Specialty</p><br><br>
+                <p style="font-family: Open Sans; font-size: 15px;">Contains: gluten, legumes, chickpeas</p>
+              </div>
+              </div>
+              <div class="choleDiv" id="choleDisplay">
+                <label id="choleConfirm" style="font-family: oswald; margin: 20px; padding-left: 30px;">Confirm Purchase of Chole Bhature for $20.99? (You can cancel at checkout screen)</label>
+                <button id="choleYes" onclick="chole()">Yes</button>
+                <button id="choleYes" onclick="closeChole()">No</button>
+                </div>
+              <hr>
+
+
+              <div style="display: flex; align-items: center;" onclick="openThaiRed()">
+                <img src="thaired.png" class="image-dims">
+                <div>
+                  <h1 style="font-family: oswald; font-size: 65px;">THAI RED CURRY</h1>
+                  <p style="font-family: bitter; font-size: 20px;">A flavorful curry made with coconut milk, red curry paste, and vegetables like kabocha squash and eggplant
+
+                  </p><br>
+                  <p style="font-family: Open Sans; font-size: 20px; font-style: italic;">$20.99</p><br><br>
+                  <p style="font-family: Open Sans; font-size: 15px;">Contains: gluten, legumes, dairy</p>
+                </div>
+                </div>
+                <div class="thairedDiv" id="thairedDisplay">
+                  <label id="thairedConfirm" style="font-family: oswald; margin: 20px; padding-left: 30px;">Confirm Purchase of Thai Red Curry for $20.99? (You can cancel at checkout screen)</label>
+                  <button id="thairedYes" onclick="thaiRed()">Yes</button>
+                  <button id="thairedYes" onclick="closeThaiRed()">No</button>
+                  </div>
+                <hr>
+
+                <div style="display: flex; align-items: center;" onclick="openChiles()">
+                  <img src="chiles.png" class="image-dims">
+                  <div>
+                    <h1 style="font-family: oswald; font-size: 65px;">CHILES RELLENOS</h1>
+                    <p style="font-family: bitter; font-size: 20px;">Juicy poblano peppers stuffed with cheese, coated in an egg batter, and fried until crispy
+
+                    </p><br>
+                    <p style="font-family: Open Sans; font-size: 20px; font-style: italic;">$19.99</p><br><br>
+                    <p style="font-family: Open Sans; font-size: 15px;">Contains: dairy, eggs, gluten, nightshades</p>
+                  </div>
+                  </div>
+                  <div class="chilesDiv" id="chilesDisplay">
+                    <label id="chilesConfirm" style="font-family: oswald; margin: 20px; padding-left: 30px;">Confirm Purchase of Chiles Rellenos for $19.99? (You can cancel at checkout screen)</label>
+                    <button id="chilesYes" onclick="chiles()">Yes</button>
+                    <button id="chilesYes" onclick="closeChiles()">No</button>
+                    </div>
+                  <hr>
+
+                  <div style="display: flex; align-items: center;" onclick="openArepas()">
+                    <img src="arepas.png" class="image-dims">
+                    <div>
+                      <h1 style="font-family: oswald; font-size: 65px;">AREPAS</h1>
+                      <p style="font-family: bitter; font-size: 20px;">Fluffy corn cakes stuffed with various fillings like cheese, avocado, or beans
+
+                      </p><br>
+                      <p style="font-family: Open Sans; font-size: 20px; font-style: italic;">$16.99</p><br><br>
+                      <p style="font-family: Open Sans; font-size: 15px;">Contains: corn, dairy, herbs</p>
+                    </div>
+                    </div>
+                    <div class="arepasDiv" id="arepasDisplay">
+                      <label id="arepasConfirm" style="font-family: oswald; margin: 20px; padding-left: 30px;">Confirm Purchase of Arepas for $16.99? (You can cancel at checkout screen)</label>
+                      <button id="arepasYes" onclick="arepas()">Yes</button>
+                      <button id="arepasYes" onclick="closeArepas()">No</button>
+                      </div>
+                    <hr>
+
+                    <div style="display: flex; align-items: center;" onclick="openBuddhas()">
+                      <img src="buddhas.png" class="image-dims">
+                      <div>
+                        <h1 style="font-family: oswald; font-size: 65px;">BUDDHA'S DELIGHT</h1>
+                        <p style="font-family: bitter; font-size: 20px;">Various vegetables, tofu, and sometimes mushrooms stir-fried with savory sauces
+
+                        </p><br>
+                        <p style="font-family: Open Sans; font-size: 20px; font-style: italic;">$20.99</p><br><br>
+                        <p style="font-family: Open Sans; font-size: 15px;">Contains: soy, gluten, sesame, nuts</p>
+                      </div>
+                      </div>
+                      <div class="buddhasDiv" id="buddhasDisplay">
+                        <label id="buddhasConfirm" style="font-family: oswald; margin: 20px; padding-left: 30px;">Confirm Purchase of Buddha's Delight for $20.99? (You can cancel at checkout screen)</label>
+                        <button id="buddhasYes" onclick="buddhas()">Yes</button>
+                        <button id="buddhasYes" onclick="closeBuddhas()">No</button>
+                        </div>
+                      <hr>
+
+    
+              <p style="font-family: open sans; margin: 20px; padding-left: 30px;">Please ask attendants or call for more allergen information.</p>
+              <hr>
+              <div
+        class="contact-info"
+        style="display: flex; justify-content: space-around;font-size: 15px; font-family: verdana !important;"
+      >
+        <label><a href="index.html">impeckableatlanta@gmail.com</a></label
+        ><label>|</label><label>675 Peachmont Avenue, Alpharetta, GA</label
+        ><label>|</label><label>+1 (678) 843-1535</label>
+      </div>
+          <script src="sketch.js"></script>
+      </body>
+</html>

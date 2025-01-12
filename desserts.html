@@ -1,0 +1,165 @@
+<html>
+    <head>
+        <link
+          href="https://fonts.googleapis.com/css?family=Oswald"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css?family=Open Sans"
+          rel="stylesheet"
+        />
+        <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet'>
+        <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css" />
+        <link rel="stylesheet" href="desserts.css">
+        <link rel="stylesheet" href="headerAccess.css" />
+      </head>
+
+
+
+      <body>
+        <div class="costHeader pointer" id="header"><label class="pointer">Total: $</label><label id="costLabel" class="pointer"></label></div>
+    <div class="dropdown" id="dropDiv">
+      <ul id="dropList"> </ul>
+    </div>
+        <img src="appmenumain.png" width="100%"><br>
+        <nav class="navtest">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="appetizers.html">Appetizers</a></li>
+            <li><a href="entrees.html">Entrees</a></li>
+            <li><a href="desserts.html">Desserts</a></li>
+            <li><a href="drinks.html">Drinks</a></li>
+            <li><a href="billinginfo.html">Billing Info</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="referencepage.html">Reference Page</a></li>
+            <li><a href="index.html">FAQ</a></li>
+          </ul>
+        </nav>
+        <h1 class="app">DESSERTS</h1>
+        <hr>
+        <div style="display: flex; align-items: center;" onclick="openApfelkuchen()">
+        <img src="apfelkuchen.png" class="image-dims">
+        <div>
+          <h1 style="font-family: oswald; font-size: 65px;">APFELKUCHEN</h1>
+          <p style="font-family: bitter; font-size: 20px;">A delicious delight of an apple cake often made with Granny Smith apples. 
+
+          </p><br>
+          <p style="font-family: Open Sans; font-size: 20px; font-style: italic;">$7.99, 2 pc
+          </p><br><br>
+          <p style="font-family: Open Sans; font-size: 15px;">Contains: gluten, dairy, eggs
+          </p>
+        </div>
+        </div>
+        <div class="apfelkuchenDiv" id="apfelkuchenDisplay">
+        <label id="apfelkuchenConfirm" style="font-family: oswald; margin: 20px; padding-left: 30px;">Confirm Purchase of Apfelkuchen for $7.99? (You can cancel at checkout screen)</label>
+        <button id="apfelkuchenYes" onclick="apfelkuchen()">Yes</button>
+        <button id="apfelkuchenNo" onclick="closeApfelkuchen()">No</button>
+        </div>
+        <hr>
+    
+        <div style="display: flex; align-items: center;" onclick="openMalabi()">
+          <img src="malabi.png" class="image-dims">
+          <div>
+            <h1 style="font-family: oswald; font-size: 65px;">MALABI (RIZ BI HALEEB)</h1>
+            <p style="font-family: bitter; font-size: 20px;">A creamy dessert flavored with rose water, pistachios, and pomegranate seeds. 
+
+            </p><br>
+            <p style="font-family: Open Sans; font-size: 20px; font-style: italic;">$6.99, 2 pc</p><br><br>
+            <p style="font-family: Open Sans; font-size: 15px;">Contains: dairy, nuts</p>
+          </div>
+          </div>
+          <div class="malabiDiv" id="malabiDisplay">
+            <label id="malabiConfirm" style="font-family: oswald; margin: 20px; padding-left: 30px;">Confirm Purchase of Malabi for $6.99? (You can cancel at checkout screen)</label>
+            <button id="malabiYes" onclick="malabi()">Yes</button>
+            <button id="malabiNo" onclick="closeMalabi()">No</button>
+            </div>
+    
+          <hr>
+    
+          <div style="display: flex; align-items: center;" onclick="openTresLeches()">
+            <img src="tresleches.png" class="image-dims">
+            <div>
+              <h1 style="font-family: oswald; font-size: 65px;">TRES LECHES CAKE</h1>
+              <p style="font-family: bitter; font-size: 20px;">A sponge cake soaked in three types of milk (condensed milk and evaporated milk), topped with whipped cream
+            </p><br>
+              <p style="font-family: Open Sans; font-size: 20px; font-style: italic;">$6.99, 2 pc</p><br><br>
+              <p style="font-family: Open Sans; font-size: 15px;">Contains: dairy, gluten, eggs</p>
+            </div>
+            </div>
+            <div class="treslechesDiv" id="treslechesDisplay">
+              <label id="treslechesConfirm" style="font-family: oswald; margin: 20px; padding-left: 30px;">Confirm Purchase of Tres Leches Cake for $6.99? (You can cancel at checkout screen)</label>
+              <button id="treslechesYes" onclick="tresLeches()">Yes</button>
+              <button id="treslechesYes" onclick="closeTresLeches()">No</button>
+              </div>
+            <hr>
+    
+            <div style="display: flex; align-items: center;" onclick="openKulfi()">
+              <img src="kulfi.png" class="image-dims">
+              <div>
+                <h1 style="font-family: oswald; font-size: 65px;">KULFI</h1>
+                <p style="font-family: bitter; font-size: 20px;">A dense and creamy frozen dessert made with milk, sugar, and spices like cardamom and saffron
+                </p><br>
+                <p style="font-family: Open Sans; font-size: 20px; font-style: italic;">$2.99, 2 pc</p><br><br>
+                <p style="font-family: Open Sans; font-size: 15px;">Contains: dairy, nuts</p>
+              </div>
+              </div>
+              <div class="kulfiDiv" id="kulfiDisplay">
+                <label id="kulfiConfirm" style="font-family: oswald; margin: 20px; padding-left: 30px;">Confirm Purchase of Kulfi for $2.99? (You can cancel at checkout screen)</label>
+                <button id="kulfiYes" onclick="kulfi()">Yes</button>
+                <button id="kulfiYes" onclick="closeKulfi()">No</button>
+                </div>
+              <hr>
+
+
+              <div style="display: flex; align-items: center;" onclick="openFlan()">
+                <img src="flan.png" class="image-dims">
+                <div>
+                  <h1 style="font-family: oswald; font-size: 65px;">FLAN</h1>
+                  <p style="font-family: bitter; font-size: 20px;">A caramel custard dessert with a silky smooth texture
+
+                  </p><br>
+                  <p style="font-family: Open Sans; font-size: 20px; font-style: italic;">$5.99, 1 pc</p><br><br>
+                  <p style="font-family: Open Sans; font-size: 15px;">Contains: dairy, eggs</p>
+                </div>
+                </div>
+                <div class="flanDiv" id="flanDisplay">
+                  <label id="flanConfirm" style="font-family: oswald; margin: 20px; padding-left: 30px;">Confirm Purchase of Flan for $5.99? (You can cancel at checkout screen)</label>
+                  <button id="flanYes" onclick="flan()">Yes</button>
+                  <button id="flanYes" onclick="closeFlan()">No</button>
+                  </div>
+                <hr>
+
+                <div style="display: flex; align-items: center;" onclick="openSesame()">
+                  <img src="sesame.png" class="image-dims">
+                  <div>
+                    <h1 style="font-family: oswald; font-size: 65px;">SESAME BALLS</h1>
+                    <p style="font-family: bitter; font-size: 20px;">A crisp and crunchy exterior that reveals a chewy and exquisite filling
+
+                    </p><br>
+                    <p style="font-family: Open Sans; font-size: 20px; font-style: italic;">$3.99, 5 pc</p><br><br>
+                    <p style="font-family: Open Sans; font-size: 15px;">Contains: dairy, nuts</p>
+                  </div>
+                  </div>
+                  <div class="sesameDiv" id="sesameDisplay">
+                    <label id="sesameConfirm" style="font-family: oswald; margin: 20px; padding-left: 30px;">Confirm Purchase of Sesame Balls for $3.99? (You can cancel at checkout screen)</label>
+                    <button id="sesameYes" onclick="sesame()">Yes</button>
+                    <button id="sesameYes" onclick="closeSesame()">No</button>
+                    </div>
+                  <hr>
+
+
+    
+              <p style="font-family: open sans; margin: 20px; padding-left: 30px;">Please ask attendants or call for more allergen information.</p>
+              <hr>
+              <div
+        class="contact-info"
+        style="display: flex; justify-content: space-around;font-size: 15px; font-family: verdana !important;"
+      >
+        <label><a href="index.html">impeckableatlanta@gmail.com</a></label
+        ><label>|</label><label>675 Peachmont Avenue, Alpharetta, GA</label
+        ><label>|</label><label>+1 (678) 843-1535</label>
+      </div>
+          <script src="sketch.js"></script>
+      </body>
+</html>
