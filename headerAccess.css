@@ -26,27 +26,27 @@
     position: fixed;
     top: 0px;
     font-family: "Open Sans";
-    right: 50px; /* 50px gap from the left */
-    background-color: #EFEEEF; /* Light gray background for the header */
+    right: 50px;
+    background-color: #EFEEEF;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 20px;
     padding-right: 20px;
     font-size: 24px;
-    border-radius: 5px; /* Optional: Slightly rounded corners */
+    border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   .dropdown {
     position: fixed;
-    top: 60px; /* Below the sticky header */
+    top: 60px;
     right: 50px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     width: 200px;
-    display: none; /* Initially hidden */
-    transition: max-height 0.3s ease-in-out; /* Smooth animation */
+    display: none;
+    transition: max-height 0.3s ease-in-out;
     background-color: #EFEEEF;
     font-family: "open sans";
   }
@@ -77,5 +77,5 @@
   }
   
   .remove-btn:hover {
-    background-color: darkgray; /* Darker red on hover */
+    background-color: darkgray;
   }
